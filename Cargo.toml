@@ -1,0 +1,26 @@
+[package]
+name = "hashing-benchmark-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ahash = "0.8.7"
+crc32fast = "1.3.2"
+fastmurmur3 = "0.2.0"
+fnv = "1.0.7"
+fxhash = "0.2.1"
+gxhash = "3.1.1"
+highway = "1.1.0"
+komihash = "0.4.1"
+metrohash = "1.0.6"
+mur3 = "0.1.0"
+museair = "0.2.0"
+seahash = "4.1.0"
+siphasher = "1.0.0"
+t1ha = "0.1.2"
+wyhash = "0.5.0"
+xxhash-rust = { version = "0.8.8", features = ["xxh64"] }
+zwohash = "0.1.2"
+
+[profile.release]
+lto = true
